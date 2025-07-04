@@ -1,0 +1,172 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Hapus background-color: #f0f2f5; */
+
+    /* --- START: Penambahan untuk Background Gambar --- */
+    background-image: url('bg.png'); /* Ganti 'your-image-name.jpg' dengan nama file gambar Anda */
+    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-position: center center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    background-attachment: fixed; /* Membuat gambar tetap saat di-scroll (opsional, bisa dihapus jika tidak ingin fixed) */
+    /* --- END: Penambahan untuk Background Gambar --- */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.3); /* Tambahkan transparansi agar gambar background terlihat */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+h1 {
+    color: #ffffff; /* Dark blue-gray */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+h2 {
+    color: #ffffff; /* Slightly lighter dark blue-gray */
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+/* Question Section */
+.question-section {
+    margin-bottom: 30px;
+}
+
+/* Options Container (for answer buttons) */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px;
+}
+
+.option-button {
+    background-color: #ecf0f1; /* Light gray for buttons */
+    border: 2px solid #bdc3c7; /* Border for buttons */
+    color: #34495e;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    text-align: left; /* Align text to left */
+}
+
+.option-button:hover {
+    background-color: #dbe4e7;
+    border-color: #95a5a6;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.option-button.selected {
+    background-color: #3498db; /* Blue for selected */
+    color: #ffffff;
+    border-color: #2980b9;
+}
+
+.option-button.correct {
+    background-color: #2ecc71; /* Green for correct */
+    color: #ffffff;
+    border-color: #27ae60;
+}
+
+.option-button.incorrect {
+    background-color: #e74c3c; /* Red for incorrect */
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+/* Next Button */
+.next-button, .restart-button {
+    background-color: #27ae60; /* Green for action buttons */
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.next-button:hover, .restart-button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+}
+
+.next-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* Light green background for result */
+    border-radius: 8px;
+    border: 1px solid #d1e7dd;
+}
+
+.result-section 
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.6em;
+}
+
+.result-section p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.result-section #score {
+    font-weight: 600;
+    color: #27ae60;
+}
+
+/* Utility Class */
+.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .option-button, .next-button, .restart-button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
