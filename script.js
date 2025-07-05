@@ -120,11 +120,12 @@ function loadQuestion() {
 
     // Gunakan shuffledQuestions, bukan questions asli
     if (currentQuestionIndex < shuffledQuestions.length) {
-        const currentQuestion = shuffledQuestions[currentQuestionIndex]; // Ambil pertanyaan dari array yang sudah diacak
-        questionElement.textContent = currentQuestion.question; // Tampilkan pertanyaan
+        const currentQuestion = shuffledQuestions[currentQuestionIndex];
+        // --- START: Penambahan untuk nomor pertanyaan ---
+        questionElement.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`; // Tampilkan nomor dan pertanyaan
+        // --- END: Penambahan ---
 
         // Buat tombol untuk setiap pilihan jawaban
-        // (Opsional: Anda juga bisa mengacak urutan pilihan jawaban di sini jika mau)
         const shuffledOptions = shuffleArray([...currentQuestion.options]); // Acak pilihan jawaban
         shuffledOptions.forEach(option => {
             const button = document.createElement('button');
