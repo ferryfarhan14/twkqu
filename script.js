@@ -74,6 +74,7 @@ const questions = [
 let currentQuestionIndex = 0; // Melacak pertanyaan yang sedang ditampilkan
 let score = 0; // Melacak skor pengguna
 let selectedOption = null; // Melacak pilihan jawaban yang dipilih pengguna
+let shuffledQuestions = []; // Array untuk menyimpan pertanyaan yang sudah diacak
 
 // --- BAGIAN 3: MENGAMBIL ELEMEN HTML ---
 const quizContainer = document.getElementById('quiz');
@@ -87,11 +88,22 @@ const restartButton = document.getElementById('restart-button');
 
 // --- BAGIAN 4: FUNGSI UTAMA KUIS ---
 
+// Fungsi untuk mengacak array (algoritma Fisher-Yates shuffle)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Tukar elemen
+    }
+    return array;
+}
+
 // Fungsi untuk memulai kuis
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     selectedOption = null;
+    shuffledQuestions = shuffleArray([...questions]); // Acak pertanyaan dan simpan di shuffledQuestions
+    
     quizContainer.classList.remove('hidden'); // Tampilkan bagian kuis
     resultContainer.classList.add('hidden'); // Sembunyikan bagian hasil
     nextButton.textContent = 'Selanjutnya'; // Reset teks tombol
@@ -106,12 +118,15 @@ function loadQuestion() {
     selectedOption = null; // Reset pilihan yang dipilih
     nextButton.disabled = true; // Nonaktifkan tombol selanjutnya
 
-    if (currentQuestionIndex < questions.length) {
-        const currentQuestion = questions[currentQuestionIndex];
+    // Gunakan shuffledQuestions, bukan questions asli
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        const currentQuestion = shuffledQuestions[currentQuestionIndex]; // Ambil pertanyaan dari array yang sudah diacak
         questionElement.textContent = currentQuestion.question; // Tampilkan pertanyaan
 
         // Buat tombol untuk setiap pilihan jawaban
-        currentQuestion.options.forEach(option => {
+        // (Opsional: Anda juga bisa mengacak urutan pilihan jawaban di sini jika mau)
+        const shuffledOptions = shuffleArray([...currentQuestion.options]); // Acak pilihan jawaban
+        shuffledOptions.forEach(option => {
             const button = document.createElement('button');
             button.textContent = option;
             button.classList.add('option-button');
@@ -144,7 +159,8 @@ function checkAnswer() {
         return;
     }
 
-    const currentQuestion = questions[currentQuestionIndex];
+    // Gunakan shuffledQuestions, bukan questions asli
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
     const allOptionButtons = document.querySelectorAll('.option-button');
 
     // Nonaktifkan semua tombol pilihan setelah jawaban dipilih
@@ -178,7 +194,7 @@ function showResult() {
     quizContainer.classList.add('hidden'); // Sembunyikan bagian kuis
     resultContainer.classList.remove('hidden'); // Tampilkan bagian hasil
     scoreElement.textContent = score; // Tampilkan skor akhir
-    totalQuestionsElement.textContent = questions.length; // Tampilkan total pertanyaan
+    totalQuestionsElement.textContent = questions.length; // Tampilkan total pertanyaan (tetap dari array asli untuk total)
 }
 
 // --- BAGIAN 5: EVENT LISTENERS ---
