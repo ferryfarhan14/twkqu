@@ -43,23 +43,14 @@ h2 {
 /* Question Section */
 .question-section {
     margin-bottom: 30px;
-    position: relative; /* Penting untuk posisi timer absolut jika diinginkan */
 }
 
-/* --- START: Penambahan untuk Timer --- */
-.timer {
-    font-size: 1.8em;
-    font-weight: 600;
-    color: #e74c3c; /* Warna merah untuk timer */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /* Jika ingin posisi absolut di sudut kanan atas pertanyaan: */
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px; */
+/* --- START: Penambahan untuk Progress Text --- */
+.progress-text {
+    font-size: 1.1em;
+    color: #ffffff; /* Warna putih untuk teks progress */
+    margin-bottom: 20px; /* Jarak dari judul utama */
+    font-weight: 500;
 }
 /* --- END: Penambahan --- */
 
@@ -91,26 +82,26 @@ h2 {
 }
 
 .option-button.selected {
-    background-color: #3498db; /* Blue for selected */
+    background-color: #3498db;
     color: #ffffff;
     border-color: #2980b9;
 }
 
 .option-button.correct {
-    background-color: #2ecc71; /* Green for correct */
+    background-color: #2ecc71;
     color: #ffffff;
     border-color: #27ae60;
 }
 
 .option-button.incorrect {
-    background-color: #e74c3c; /* Red for incorrect */
+    background-color: #e74c3c;
     color: #ffffff;
     border-color: #c0392b;
 }
 
 /* Next Button */
 .next-button, .restart-button {
-    background-color: #27ae60; /* Green for action buttons */
+    background-color: #27ae60;
     color: #ffffff;
     border: none;
     padding: 15px 30px;
@@ -141,10 +132,10 @@ h2 {
 }
 
 /* Ini adalah h2 di dalam result-section, jadi warnanya berbeda dari h2 pertanyaan */
-.result-section h2 { /* Perbaikan selektor: tambahkan .result-section di depan h2 */
+.result-section h2 {
     color: #333; /* Warna gelap untuk h2 di result section */
-    margin-bottom: 25px; /* Ini sudah ada, tapi saya pastikan di sini */
-    font-size: 1.6em; /* Ini sudah ada, tapi saya pastikan di sini */
+    margin-bottom: 25px;
+    font-size: 1.6em;
 }
 
 .result-section p {
