@@ -76,6 +76,12 @@ let score = 0; // Melacak skor pengguna
 let selectedOption = null; // Melacak pilihan jawaban yang dipilih pengguna
 let shuffledQuestions = []; // Array untuk menyimpan pertanyaan yang sudah diacak
 
+// --- START: Penambahan untuk Timer ---
+const QUESTION_TIME_LIMIT = 20; // Waktu dalam detik untuk setiap pertanyaan (DIUBAH MENJADI 20)
+let timeLeft = QUESTION_TIME_LIMIT; // Waktu yang tersisa
+let timerInterval; // Variabel untuk menyimpan ID interval timer
+// --- END: Penambahan ---
+
 // --- BAGIAN 3: MENGAMBIL ELEMEN HTML ---
 const quizContainer = document.getElementById('quiz');
 const resultContainer = document.getElementById('result');
@@ -85,6 +91,7 @@ const nextButton = document.getElementById('next-button');
 const scoreElement = document.getElementById('score');
 const totalQuestionsElement = document.getElementById('total-questions');
 const restartButton = document.getElementById('restart-button');
+const timerElement = document.getElementById('timer'); // Ambil elemen timer
 
 // --- BAGIAN 4: FUNGSI UTAMA KUIS ---
 
@@ -111,6 +118,51 @@ function startQuiz() {
     loadQuestion(); // Muat pertanyaan pertama
 }
 
+// --- START: Penambahan Fungsi Timer ---
+function startTimer() {
+    clearInterval(timerInterval); // Hentikan timer sebelumnya jika ada
+    timeLeft = QUESTION_TIME_LIMIT; // Reset waktu
+    timerElement.textContent = timeLeft; // Tampilkan waktu awal
+
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval); // Hentikan timer
+            // Jika waktu habis, anggap jawaban salah dan lanjutkan
+            handleTimeUp();
+        }
+    }, 1000); // Update setiap 1 detik
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
+function handleTimeUp() {
+    // Nonaktifkan semua tombol pilihan
+    document.querySelectorAll('.option-button').forEach(btn => {
+        btn.disabled = true;
+        // Tandai jawaban yang benar (opsional, untuk feedback)
+        const currentQuestion = shuffledQuestions[currentQuestionIndex];
+        if (btn.textContent === currentQuestion.correctAnswer) {
+            btn.classList.add('correct');
+        }
+    });
+
+    // Karena waktu habis, tidak ada poin yang didapat
+    // selectedOption tetap null, jadi checkAnswer tidak akan menambah skor
+
+    // Lanjutkan ke pertanyaan berikutnya setelah jeda singkat
+    setTimeout(() => {
+        currentQuestionIndex++;
+        loadQuestion();
+    }, 1000); // Jeda 1 detik
+}
+// --- END: Penambahan Fungsi Timer ---
+
+
 // Fungsi untuk memuat pertanyaan dan pilihan jawaban
 function loadQuestion() {
     // Hapus semua tombol pilihan sebelumnya
@@ -118,12 +170,9 @@ function loadQuestion() {
     selectedOption = null; // Reset pilihan yang dipilih
     nextButton.disabled = true; // Nonaktifkan tombol selanjutnya
 
-    // Gunakan shuffledQuestions, bukan questions asli
     if (currentQuestionIndex < shuffledQuestions.length) {
         const currentQuestion = shuffledQuestions[currentQuestionIndex];
-        // --- START: Penambahan untuk nomor pertanyaan ---
         questionElement.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`; // Tampilkan nomor dan pertanyaan
-        // --- END: Penambahan ---
 
         // Buat tombol untuk setiap pilihan jawaban
         const shuffledOptions = shuffleArray([...currentQuestion.options]); // Acak pilihan jawaban
@@ -134,8 +183,10 @@ function loadQuestion() {
             button.addEventListener('click', () => selectOption(button, option)); // Tambahkan event listener
             optionsContainer.appendChild(button);
         });
+        startTimer(); // Mulai timer untuk pertanyaan baru
     } else {
         // Jika semua pertanyaan sudah dijawab, tampilkan hasil
+        stopTimer(); // Pastikan timer berhenti saat kuis selesai
         showResult();
     }
 }
@@ -151,16 +202,18 @@ function selectOption(button, option) {
     button.classList.add('selected');
     selectedOption = option; // Simpan pilihan yang dipilih
     nextButton.disabled = false; // Aktifkan tombol selanjutnya
+    stopTimer(); // Hentikan timer saat jawaban dipilih
 }
 
 // Fungsi untuk memeriksa jawaban dan melanjutkan
 function checkAnswer() {
+    // selectedOption bisa null jika waktu habis dan handleTimeUp dipanggil
+    // atau jika pengguna mencoba klik 'Selanjutnya' tanpa memilih
     if (selectedOption === null) {
-        alert('Silakan pilih jawaban terlebih dahulu!');
+        alert('Silakan pilih jawaban terlebih dahulu atau tunggu waktu habis!');
         return;
     }
 
-    // Gunakan shuffledQuestions, bukan questions asli
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
     const allOptionButtons = document.querySelectorAll('.option-button');
 
