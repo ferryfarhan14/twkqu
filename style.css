@@ -1,16 +1,11 @@
 /* General Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    /* Hapus background-color: #f0f2f5; */
-
-    /* --- START: Penambahan untuk Background Gambar --- */
     background-image: url('bg.png'); /* Ganti 'your-image-name.jpg' dengan nama file gambar Anda */
     background-size: cover; /* Memastikan gambar menutupi seluruh area */
     background-position: center center; /* Memposisikan gambar di tengah */
     background-repeat: no-repeat; /* Mencegah gambar diulang */
     background-attachment: fixed; /* Membuat gambar tetap saat di-scroll (opsional, bisa dihapus jika tidak ingin fixed) */
-    /* --- END: Penambahan untuk Background Gambar --- */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +17,7 @@ body {
 
 /* Quiz Container */
 .quiz-container {
-    background-color: rgba(255, 255, 255, 0.3); /* Tambahkan transparansi agar gambar background terlihat */
+    background-color: rgba(255, 255, 255, 0.3); /* Transparansi 30% */
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -33,14 +28,14 @@ body {
 }
 
 h1 {
-    color: #ffffff; /* Dark blue-gray */
+    color: #ffffff; /* Warna putih untuk h1 */
     margin-bottom: 30px;
     font-size: 2.2em;
     font-weight: 600;
 }
 
 h2 {
-    color: #ffffff; /* Slightly lighter dark blue-gray */
+    color: #ffffff; /* Warna putih untuk h2 (pertanyaan) */
     margin-bottom: 25px;
     font-size: 1.6em;
 }
@@ -48,7 +43,25 @@ h2 {
 /* Question Section */
 .question-section {
     margin-bottom: 30px;
+    position: relative; /* Penting untuk posisi timer absolut jika diinginkan */
 }
+
+/* --- START: Penambahan untuk Timer --- */
+.timer {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #e74c3c; /* Warna merah untuk timer */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* Jika ingin posisi absolut di sudut kanan atas pertanyaan: */
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px; */
+}
+/* --- END: Penambahan --- */
 
 /* Options Container (for answer buttons) */
 .options-container {
@@ -122,17 +135,16 @@ h2 {
 .result-section {
     margin-top: 30px;
     padding: 20px;
-    background-color: #ffffff; /* Light green background for result */
+    background-color: #ffffff; /* Background putih untuk result section */
     border-radius: 8px;
     border: 1px solid #d1e7dd;
 }
 
-.result-section 
-
-h2 {
-    color: #333;
-    margin-bottom: 25px;
-    font-size: 1.6em;
+/* Ini adalah h2 di dalam result-section, jadi warnanya berbeda dari h2 pertanyaan */
+.result-section h2 { /* Perbaikan selektor: tambahkan .result-section di depan h2 */
+    color: #333; /* Warna gelap untuk h2 di result section */
+    margin-bottom: 25px; /* Ini sudah ada, tapi saya pastikan di sini */
+    font-size: 1.6em; /* Ini sudah ada, tapi saya pastikan di sini */
 }
 
 .result-section p {
