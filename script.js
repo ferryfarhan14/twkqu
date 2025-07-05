@@ -10,7 +10,7 @@ const questions = [
     {
         question: "Selat yang terletak di antara Pulau Kalimantan dan Sulawesi adalah Selat?",
         options: ["Malaka", "Madara", "Makassar", "Mitoma"],
-        correctAnswer: "Jakarta"
+        correctAnswer: "Makassar"
     },
     {
         question: "Kepala daerah di tingkat provinsi adalah?",
