@@ -31,6 +31,41 @@ const questions = [
         question: "Apa nama samudra terbesar di dunia?",
         options: ["Samudra Atlantik", "Samudra Hindia", "Samudra Arktik", "Samudra Pasifik"],
         correctAnswer: "Samudra Pasifik"
+    },
+    {
+        question: "Proklamasi Kemerdekaan Indonesia dibacakan pada tanggal?",
+        options: ["16 Agustus 1945", "17 Agustus 1945", "18 Agustus 1945", "19 Agustus 1945"],
+        correctAnswer: "17 Agustus 1945"
+    },
+    {
+        question: "Makna dari Bhineka Tunggal Ika adalah?",
+        options: ["Berbeda-beda tetapi tetap satu", "Bersatu dalam keberagaman", "Berbeda tetapi bersatu", "Semua jawaban benar"],
+        correctAnswer: "Berbeda-beda tetapi tetap satu"
+    },
+    {
+        question: "Setiap warga negara berhak mendapatkan pendidikan. Hal ini diatur dalam Pasal ... UUD 1945",
+        options: ["28A", "28C ayat (1)", "31 ayat (1)", "34 ayat (2)"],
+        correctAnswer: "31 ayat (1)"
+    },
+    {
+        question: "Sistem pemerintahan di Indonesia adalah?",
+        options: ["Parlementer", "Presidensial", "Federal", "Semi-presidensial"],
+        correctAnswer: "Presidensial"
+    },
+    {
+        question: "Letak geografis Indonesia berada di antara dua benua, yaitu?",
+        options: ["Asia dan Australia", "Asia dan Afrika", "Eropa dan Asia", "Australia dan Amerika"],
+        correctAnswer: "Asia dan Australia"
+    },
+    {
+        question: "Upaya bela negara adalah tanggung jawab?",
+        options: ["Presiden", "Pemerintah pusat", "Seluruh warga negara", "Aparat keamanan"],
+        correctAnswer: "Seluruh warga negara"
+    },
+    {
+        question: "Sumpah Pemuda diikrarkan pada tanggal?",
+        options: ["28 Oktober 1928", "17 Agustus 1945", "1 Juni 1945", "20 Mei 1908"],
+        correctAnswer: "28 Oktober 1928"
     }
     // Tambahkan pertanyaan Anda di sini
 ];
