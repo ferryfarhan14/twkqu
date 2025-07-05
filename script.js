@@ -8,29 +8,29 @@
 // }
 const questions = [
     {
-        question: "Apa ibu kota negara Indonesia?",
-        options: ["Bandung", "Surabaya", "Jakarta", "Medan"],
+        question: "Selat yang terletak di antara Pulau Kalimantan dan Sulawesi adalah Selat?",
+        options: ["Malaka", "Madara", "Makassar", "Mitoma"],
         correctAnswer: "Jakarta"
     },
     {
-        question: "Siapakah penemu bola lampu pijar?",
-        options: ["Nikola Tesla", "Thomas Edison", "Alexander Graham Bell", "Isaac Newton"],
-        correctAnswer: "Thomas Edison"
+        question: "Kepala daerah di tingkat provinsi adalah?",
+        options: ["Wali kota", "Camat", "Gubernur", "Bupati"],
+        correctAnswer: "Gubernur"
     },
     {
-        question: "Planet manakah yang dikenal sebagai 'Planet Merah'?",
-        options: ["Venus", "Mars", "Jupiter", "Saturnus"],
-        correctAnswer: "Mars"
+        question: "Lambang dari Pancasila sila ke-2 adalah?",
+        options: ["Pohon Beringin", "Rantai", "Kepala Banteng", "Bintang"],
+        correctAnswer: "Rantai"
     },
     {
-        question: "Berapakah hasil dari 7 x 8?",
-        options: ["49", "54", "56", "63"],
-        correctAnswer: "56"
+        question: "Jumlah Provinsi di indonesia sampai saat ini berjumlah?",
+        options: ["39", "34", "36", "38"],
+        correctAnswer: "38"
     },
     {
-        question: "Apa nama samudra terbesar di dunia?",
-        options: ["Samudra Atlantik", "Samudra Hindia", "Samudra Arktik", "Samudra Pasifik"],
-        correctAnswer: "Samudra Pasifik"
+        question: "Secara astronomi, letak wilayah Indonesia antara?",
+        options: ["11 derajat LU - 6 derajat LU", "6 derajat LU - 18 derajat LS", "6 derajat LU - 11 derajat LS", "18 derajat LU - 6 derajat LS"],
+        correctAnswer: "6 derajat LU - 11 derajat LS"
     },
     {
         question: "Proklamasi Kemerdekaan Indonesia dibacakan pada tanggal?",
