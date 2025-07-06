@@ -1,7 +1,6 @@
 # 🧠 Tes Wawasan Kebangsaan 🇮🇩 (TWKQu)
 
-![TWKQu Screenshot](https://via.placeholder.com/800x450?text=Screenshot+Aplikasi+Kuis+Anda )
-*(Ganti placeholder ini dengan screenshot aktual dari aplikasi kuis Anda)*
+(https://github.com/user-attachments/assets/8b2f0b0f-fca2-441b-a87e-7693f26eb21f)
 
 Aplikasi kuis interaktif sederhana yang dirancang untuk menguji dan meningkatkan wawasan kebangsaan pengguna. Dibangun menggunakan HTML, CSS, dan Vanilla JavaScript, aplikasi ini menawarkan pengalaman kuis yang responsif dan dinamis tanpa memerlukan backend.
 
