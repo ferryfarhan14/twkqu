@@ -126,6 +126,7 @@ const scoreElement = document.getElementById('score');
 const totalQuestionsElement = document.getElementById('total-questions');
 const restartButton = document.getElementById('restart-button');
 const progressTextElement = document.getElementById('progress-text'); // Ambil elemen progress text
+const errorMessageElement = document.getElementById('error-message'); // Ambil elemen error message
 
 // --- BAGIAN 4: FUNGSI UTAMA KUIS ---
 
@@ -149,6 +150,8 @@ function startQuiz() {
     resultContainer.classList.add('hidden'); // Sembunyikan bagian hasil
     nextButton.textContent = 'Selanjutnya'; // Reset teks tombol
     nextButton.disabled = true; // Nonaktifkan tombol selanjutnya sampai ada pilihan
+    errorMessageElement.classList.add('hidden'); // Sembunyikan pesan error
+    
     loadQuestion(); // Muat pertanyaan pertama
 }
 
@@ -158,14 +161,22 @@ function loadQuestion() {
     optionsContainer.innerHTML = '';
     selectedOption = null; // Reset pilihan yang dipilih
     nextButton.disabled = true; // Nonaktifkan tombol selanjutnya
+    errorMessageElement.classList.add('hidden'); // Sembunyikan pesan error saat pertanyaan baru dimuat
+
+    // Hapus kelas 'show' untuk animasi fade-out pertanyaan sebelumnya
+    questionElement.classList.remove('show');
 
     if (currentQuestionIndex < shuffledQuestions.length) {
         const currentQuestion = shuffledQuestions[currentQuestionIndex];
         questionElement.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`; // Tampilkan nomor dan pertanyaan
         
-        // --- START: Penambahan untuk update progress text ---
+        // Update progress text
         progressTextElement.textContent = `Soal ${currentQuestionIndex + 1} dari ${shuffledQuestions.length} soal`;
-        // --- END: Penambahan ---
+
+        // Tambahkan kelas 'show' setelah sedikit jeda untuk animasi fade-in
+        setTimeout(() => {
+            questionElement.classList.add('show');
+        }, 50); // Jeda singkat agar transisi terlihat
 
         // Buat tombol untuk setiap pilihan jawaban
         const shuffledOptions = shuffleArray([...currentQuestion.options]); // Acak pilihan jawaban
@@ -193,12 +204,13 @@ function selectOption(button, option) {
     button.classList.add('selected');
     selectedOption = option; // Simpan pilihan yang dipilih
     nextButton.disabled = false; // Aktifkan tombol selanjutnya
+    errorMessageElement.classList.add('hidden'); // Sembunyikan pesan error jika sudah memilih
 }
 
 // Fungsi untuk memeriksa jawaban dan melanjutkan
 function checkAnswer() {
     if (selectedOption === null) {
-        alert('Silakan pilih jawaban terlebih dahulu!');
+        errorMessageElement.classList.remove('hidden'); // Tampilkan pesan error
         return;
     }
 
