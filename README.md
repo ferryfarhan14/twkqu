@@ -19,6 +19,9 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
     *   Merupakan **otak di balik semua interaktivitas dan logika fungsional** aplikasi.
     *   Mengelola alur kuis, implementasi algoritma pengacakan (Fisher-Yates shuffle) untuk pertanyaan dan pilihan jawaban, manipulasi DOM untuk memperbarui konten secara dinamis, penanganan *event* (klik tombol), perhitungan skor, dan validasi input pengguna.
     *   Dipilih untuk menunjukkan pemahaman mendalam tentang dasar-dasar JavaScript tanpa ketergantungan pada *framework* atau *library* pihak ketiga.
+      
+*   **IBM Granite**
+   *   Digunakan untuk mempercepat proses pengembangan, menghasilkan kode otomatis, serta memberi saran perbaikan kode
 
 *   **GitHub**
     *   Digunakan sebagai platform **kontrol versi** dan **hosting repositori** untuk kode proyek.
@@ -80,7 +83,7 @@ Berikut adalah beberapa cara bagaimana AI seperti IBM Granite dapat berkontribus
     *   Dapat memberikan penjelasan tentang bagian kode yang kompleks atau menyarankan perbaikan untuk *bug* yang mungkin terjadi.
 *   **Saran Desain UI/UX:**
 
-![IBM_Granite_AI](https://github.com/user-attachments/assets/7a9cfd6a-1425-4bdf-a5d4-923030d4c90a)
+      ![IBM_Granite_AI](https://github.com/user-attachments/assets/7a9cfd6a-1425-4bdf-a5d4-923030d4c90a)
 
 *
     *   AI dapat menganalisis deskripsi atau *mockup* desain dan menyarankan perbaikan CSS untuk responsivitas, estetika, atau aksesibilitas, membantu menciptakan antarmuka yang lebih menarik dan *user-friendly*.
