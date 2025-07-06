@@ -20,15 +20,21 @@ Aplikasi kuis interaktif sederhana yang dirancang untuk menguji dan meningkatkan
 ## 🚀 Cara Menggunakan
 
 1. Akses pada link https://twkqu.netlify.app atau https://twkqu.vercel.app
+
+   Atau
+   
 2. Menjalan secara Lokal :
+   
     1).  **Kloning Repositori:**
         ```bash
         git clone https://github.com/ferryfarhan14/twkqu.git
         ```
+   
     2).  **Buka Folder Proyek:**
         ```bash
         cd twkqu
         ```
+   
     3).  **Buka `index.html`:**
         Cukup buka file `index.html` di browser web pilihan Anda (misalnya Chrome, Firefox, Edge ) dengan mengklik dua kali file tersebut.
 
