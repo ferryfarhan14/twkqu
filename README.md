@@ -21,7 +21,7 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
     *   Dipilih untuk menunjukkan pemahaman mendalam tentang dasar-dasar JavaScript tanpa ketergantungan pada *framework* atau *library* pihak ketiga.
       
 *   **IBM Granite**
-   *   Digunakan untuk mempercepat proses pengembangan, menghasilkan kode otomatis, serta memberi saran perbaikan kode
+    *   Digunakan untuk mempercepat proses pengembangan, menghasilkan kode otomatis, serta memberi saran perbaikan kode
 
 *   **GitHub**
     *   Digunakan sebagai platform **kontrol versi** dan **hosting repositori** untuk kode proyek.
