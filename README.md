@@ -62,13 +62,30 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
     3).  **Buka `index.html`:**
         Cukup buka file `index.html` di browser web pilihan Anda (misalnya Chrome, Firefox, Edge ) dengan mengklik dua kali file tersebut.
 
-## 🛠️ Struktur Proyek
+## 🤖 Dukungan AI dalam Proyek ( IBM Granite)
 
-Proyek ini terdiri dari tiga file utama:
+Meskipun proyek ini dikembangkan dengan fokus pada pemahaman dasar teknologi web (HTML, CSS, JavaScript), penting untuk memahami bagaimana alat AI modern, seperti **IBM Granite**, dapat mendukung dan mempercepat proses pengembangan aplikasi serupa.
 
-*   `index.html`: Struktur dasar halaman web dan elemen-elemen UI.
-*   `style.css`: Styling untuk tampilan aplikasi, termasuk responsivitas dan efek visual.
-*   `script.js`: Logika inti aplikasi kuis, termasuk manajemen pertanyaan, pengacakan, perhitungan skor, dan interaksi UI.
+IBM Granite adalah serangkaian model AI generatif yang kuat, dirancang untuk berbagai tugas, termasuk pemrosesan bahasa alami (NLP), pembuatan teks, dan bahkan pembuatan kode. Model-model ini tersedia melalui platform seperti IBM watsonx.ai dan juga sebagai *open-source*.
+
+Berikut adalah beberapa cara bagaimana AI seperti IBM Granite dapat berkontribusi pada pengembangan proyek ini:
+
+*   **Generasi Konten Otomatis:**
+    *   Model bahasa dapat dilatih atau di-*prompt* untuk menghasilkan pertanyaan kuis baru, pilihan jawaban, dan kunci jawaban berdasarkan topik tertentu (misalnya, Wawasan Kebangsaan). Ini sangat mempercepat proses pengisian data kuis.
+*   **Bantuan Pembuatan Kode (Code Generation) & Debugging:**
+    *   Model seperti Granite Code dapat membantu dalam menulis *snippet* kode JavaScript untuk fungsionalitas tertentu (misalnya, algoritma pengacakan, fungsi manipulasi DOM).
+    *   Dapat memberikan penjelasan tentang bagian kode yang kompleks atau menyarankan perbaikan untuk *bug* yang mungkin terjadi.
+*   **Saran Desain UI/UX:**
+    *   AI dapat menganalisis deskripsi atau *mockup* desain dan menyarankan perbaikan CSS untuk responsivitas, estetika, atau aksesibilitas, membantu menciptakan antarmuka yang lebih menarik dan *user-friendly*.
+*   **Penyusunan Dokumentasi Proyek:**
+    *   Model bahasa dapat membantu menyusun bagian-bagian dari `README.md`, seperti deskripsi proyek, daftar fitur, atau instruksi *setup*, memastikan dokumentasi yang jelas dan komprehensif.
+*   **Eksplorasi Fitur & Ide Baru:**
+    *   AI dapat memberikan ide-ide untuk fitur tambahan yang relevan dengan aplikasi kuis (misalnya, sistem poin, *leaderboard*, kategori soal), serta membantu dalam merencanakan langkah-langkah implementasinya.
+
+**Kesimpulan:**
+
+AI berfungsi sebagai **asisten cerdas** yang dapat mempercepat, meningkatkan kualitas, dan memberikan ide-ide inovatif dalam proses pengembangan perangkat lunak. Meskipun AI adalah alat yang sangat kuat, **keputusan akhir, kreativitas, dan pemahaman kontekstual tetap berada di tangan pengembang.** AI melengkapi keahlian manusia, bukan menggantikannya.
+
 
 ## 💡 Kustomisasi
 
