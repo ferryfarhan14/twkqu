@@ -1,4 +1,4 @@
-# 🧠 Tes Wawasan Kebangsaan (TWKQu)
+# 🧠 Tes Wawasan Kebangsaan :flag_id: (TWKQu)
 
 ![12121](https://github.com/user-attachments/assets/4d1e2595-2d74-4296-b4f0-5699a0c14fb4)
 
@@ -56,8 +56,3 @@ Jika Anda memiliki saran atau ingin berkontribusi pada proyek ini, silakan:
 4.  Commit perubahan Anda (`git commit -m 'Tambahkan fitur baru'`).
 5.  Push ke branch Anda (`git push origin feature/nama-fitur-baru`).
 6.  Buat Pull Request.
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [Nama Lisensi Anda, misal: MIT License]. Lihat file `LICENSE` untuk detail lebih lanjut.
-*(Jika Anda belum memiliki file LICENSE, Anda bisa membuatnya atau menghapus bagian ini.)*
