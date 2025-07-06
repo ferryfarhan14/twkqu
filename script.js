@@ -66,6 +66,46 @@ const questions = [
         question: "Sumpah Pemuda diikrarkan pada tanggal?",
         options: ["28 Oktober 1928", "17 Agustus 1945", "1 Juni 1945", "20 Mei 1908"],
         correctAnswer: "28 Oktober 1928"
+    },
+    {
+        question: "Di negara manakah B.J. Habibie menempuh pendidikan tinggi dan bekerja dalam industri penerbangan selama bertahun-tahun?",
+        options: ["Jerman", "Jepang", "Belanda", "Rusia"],
+        correctAnswer: "Jerman"
+    },
+    {
+        question: "Tokoh Jong Sumatranen Bond yang menjadi wakil Presiden RI adalah?",
+        options: ["Mohammad Ali", "Imam Bonjol", "Mohammad Hatta", "Tan Malaka"],
+        correctAnswer: "Mohammad Hatta"
+    },
+    {
+        question: "Ilmuwan Indonesia manakah yang menemukan teori 'Crack Progression' yang sangat penting untuk menghitung keretakan pada badan pesawat?",
+        options: ["Khoirul Anwar", "B.J. Habibie", "Muhammad Nurhuda", "Mohammad Fahmi"],
+        correctAnswer: "B.J. Habibie"
+    },
+    {
+        question: "Provinsi yang letaknya paling barat di wilayah Indonesia adalah?",
+        options: ["Sumatera Utara", "Aceh", "Kepulauan Riau", "Sumatera Barat"],
+        correctAnswer: "Aceh"
+    },
+    {
+        question: "Ibu kota Provinsi Nusa Tenggara Barat adalah?",
+        options: ["Mataram", "Manado", "Makassar", "Maluku"],
+        correctAnswer: "Mataram"
+    },
+    {
+        question: "Pulau Natuna merupaka pulau yang terletak di Provinsi?",
+        options: ["Kepulauan Riau", "Sulawesi Utara", "Papua Barat", "Sumatera Utara"],
+        correctAnswer: "Kepulauan Riau"
+    },
+    {
+        question: "Sumber pendapatan terbesar bagi negara Indonesia saat ini adalah?",
+        options: ["Laba Badan Usaha Milik Negara (BUMN)", "Penerimaan dari Sumber Daya Alam (SDA)", "Pajak", "Badan Layanan Umum"],
+        correctAnswer: "Pajak"
+    },
+    {
+        question: "Sistem yang menempatkan seseorang berdasarkan hubungan keluarga daripada kemampuan atau kelayakan disebut?",
+        options: ["Nepotisme", "Pluralisme", "Komunisme", "Kapitalisme"],
+        correctAnswer: "Nepotisme"
     }
     // Tambahkan pertanyaan Anda di sini
 ];
