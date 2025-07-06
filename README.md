@@ -3,7 +3,8 @@
 ![TWKQu](https://github.com/user-attachments/assets/0d18314b-7ad8-41a7-b4aa-dad1f8ae8077)
 
 
-Aplikasi kuis interaktif sederhana yang dirancang untuk menguji dan meningkatkan wawasan kebangsaan pengguna. Dibangun menggunakan HTML, CSS, dan JavaScript, aplikasi ini menawarkan pengalaman kuis yang responsif dan dinamis tanpa memerlukan backend.
+## ✨ Deskripsi
+TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian wawasan kebangsaan. Sebagai aplikasi single-page yang berjalan sepenuhnya di sisi klien, TWKQu memanfaatkan kekuatan HTML5 untuk menyusun konten, CSS3 untuk menciptakan antarmuka pengguna yang bersih, modern, dan responsif di berbagai perangkat, serta JavaScript untuk menggerakkan seluruh fungsionalitasnya. Aplikasi ini dirancang untuk memberikan pengalaman belajar yang menarik melalui fitur-fitur seperti pengacakan urutan pertanyaan dan pilihan jawaban, indikator progress yang jelas, penomoran soal, serta umpan balik visual yang instan. Dengan tidak adanya ketergantungan pada backend atau framework yang kompleks, TWKQu menjadi contoh nyata bagaimana konsep dasar pengembangan web dapat diimplementasikan untuk menciptakan aplikasi yang fungsional dan menarik.
 
 ## ✨ Fitur Utama
 
