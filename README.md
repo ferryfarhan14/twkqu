@@ -1,4 +1,4 @@
-# 🧠 Tes Wawasan Kebangsaan 🇮🇩 (TWKQu)
+# 🧠 TWKQu 🇮🇩 (Tes Wawasan Kebangsaan Quiz)
 
 ![12121](https://github.com/user-attachments/assets/4d1e2595-2d74-4296-b4f0-5699a0c14fb4)
 
