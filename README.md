@@ -3,10 +3,36 @@
 ![TWKQu](https://github.com/user-attachments/assets/0d18314b-7ad8-41a7-b4aa-dad1f8ae8077)
 
 
-## ✨ Deskripsi
+## 📑 Deskripsi
 TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian wawasan kebangsaan. Sebagai aplikasi single-page yang berjalan sepenuhnya di sisi klien, TWKQu memanfaatkan kekuatan HTML5 untuk menyusun konten, CSS3 untuk menciptakan antarmuka pengguna yang bersih, modern, dan responsif di berbagai perangkat, serta JavaScript untuk menggerakkan seluruh fungsionalitasnya. Aplikasi ini dirancang untuk memberikan pengalaman belajar yang menarik melalui fitur-fitur seperti pengacakan urutan pertanyaan dan pilihan jawaban, indikator progress yang jelas, penomoran soal, serta umpan balik visual yang instan. Dengan tidak adanya ketergantungan pada backend atau framework yang kompleks, TWKQu menjadi contoh nyata bagaimana konsep dasar pengembangan web dapat diimplementasikan untuk menciptakan aplikasi yang fungsional dan menarik.
 
-## ✨ Fitur Utama
+## 🛠️ Teknologi yang Digunakan
+
+Proyek Tes Wawasan Kebangsaan (TWKQu) ini dibangun menggunakan kombinasi teknologi web standar yang kuat dan efisien:
+
+*   **HTML5**
+    *   Berfungsi sebagai **struktur dasar** dan kerangka konten aplikasi kuis.
+    *   Digunakan untuk mendefinisikan semua elemen antarmuka pengguna seperti pertanyaan, pilihan jawaban, tombol navigasi, dan area tampilan skor.
+
+*   **CSS3**
+    *   Bertanggung jawab penuh atas **tampilan visual dan pengalaman pengguna (UI/UX)** aplikasi.
+    *   Mencakup styling modern (misalnya, penggunaan font Poppins), responsivitas untuk berbagai ukuran layar, efek visual seperti transparansi (`rgba`), bayangan (`box-shadow`, `text-shadow`), dan animasi transisi (`transition`) untuk pengalaman yang lebih dinamis.
+
+*   **JavaScript**
+    *   Merupakan **otak di balik semua interaktivitas dan logika fungsional** aplikasi.
+    *   Mengelola alur kuis, implementasi algoritma pengacakan (Fisher-Yates shuffle) untuk pertanyaan dan pilihan jawaban, manipulasi DOM untuk memperbarui konten secara dinamis, penanganan *event* (klik tombol), perhitungan skor, dan validasi input pengguna.
+    *   Dipilih untuk menunjukkan pemahaman mendalam tentang dasar-dasar JavaScript tanpa ketergantungan pada *framework* atau *library* pihak ketiga.
+
+*   **GitHub**
+    *   Digunakan sebagai platform **kontrol versi** dan **hosting repositori** untuk kode proyek.
+    *   Memungkinkan pelacakan perubahan, kolaborasi, dan menyediakan akses publik ke kode sumber.
+
+*   **Netlify**
+    *   Dimanfaatkan untuk **deployment (penyebaran)** aplikasi web secara cepat dan mudah.
+    *   Memungkinkan aplikasi TWKQu diakses secara publik melalui URL yang stabil.
+
+
+## ✨ Fitur
 
 *   **Pertanyaan Acak:** Setiap sesi kuis menyajikan pertanyaan dalam urutan acak, memastikan pengalaman yang berbeda setiap kali dimainkan.
 *   **Pilihan Jawaban Acak:** Urutan pilihan jawaban juga diacak untuk mencegah hafalan posisi jawaban.
