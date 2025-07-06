@@ -3,10 +3,10 @@
 ![TWKQu](https://github.com/user-attachments/assets/0d18314b-7ad8-41a7-b4aa-dad1f8ae8077)
 
 
-## 📑 Deskripsi
+## 📑 Description
 TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian wawasan kebangsaan. Sebagai aplikasi single-page yang berjalan sepenuhnya di sisi klien, TWKQu memanfaatkan kekuatan HTML5 untuk menyusun konten, CSS3 untuk menciptakan antarmuka pengguna yang bersih, modern, dan responsif di berbagai perangkat, serta JavaScript untuk menggerakkan seluruh fungsionalitasnya. Aplikasi ini dirancang untuk memberikan pengalaman belajar yang menarik melalui fitur-fitur seperti pengacakan urutan pertanyaan dan pilihan jawaban, indikator progress yang jelas, penomoran soal, serta umpan balik visual yang instan. Dengan tidak adanya ketergantungan pada backend atau framework yang kompleks, TWKQu menjadi contoh nyata bagaimana konsep dasar pengembangan web dapat diimplementasikan untuk menciptakan aplikasi yang fungsional dan menarik.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 *   **HTML5**
     *   Berfungsi sebagai **struktur dasar** dan kerangka konten aplikasi kuis.
     *   Digunakan untuk mendefinisikan semua elemen antarmuka pengguna seperti pertanyaan, pilihan jawaban, tombol navigasi, dan area tampilan skor.
@@ -29,7 +29,7 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
     *   Memungkinkan aplikasi TWKQu diakses secara publik melalui URL yang stabil.
 
 
-## ✨ Fitur
+## ✨ Features
 
 *   **Pertanyaan Acak:** Setiap sesi kuis menyajikan pertanyaan dalam urutan acak, memastikan pengalaman yang berbeda setiap kali dimainkan.
 *   **Pilihan Jawaban Acak:** Urutan pilihan jawaban juga diacak untuk mencegah hafalan posisi jawaban.
@@ -41,7 +41,7 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
 *   **Pesan Validasi Interaktif:** Mengganti `alert()` browser dengan pesan error di dalam UI untuk pengalaman pengguna yang lebih mulus.
 *   **Animasi Transisi Pertanyaan:** Transisi halus saat memuat pertanyaan baru untuk pengalaman yang lebih dinamis.
 
-## 🚀 Cara Menggunakan
+## 🚀 Setup Instructions
 
 1. Akses pada link https://twkqu.netlify.app
 
@@ -62,7 +62,7 @@ TWKQu merupakan proyek aplikasi kuis interaktif yang berfokus pada pengujian waw
     3).  **Buka `index.html`:**
         Cukup buka file `index.html` di browser web pilihan Anda (misalnya Chrome, Firefox, Edge ) dengan mengklik dua kali file tersebut.
 
-## 🤖 Dukungan AI dalam Proyek ( IBM Granite)
+## 🤖 AI Support Explanation
 
 Meskipun proyek ini dikembangkan dengan fokus pada pemahaman dasar teknologi web (HTML, CSS, JavaScript), penting untuk memahami bagaimana alat AI modern, seperti **IBM Granite**, dapat mendukung dan mempercepat proses pengembangan aplikasi serupa.
 
@@ -74,8 +74,15 @@ Berikut adalah beberapa cara bagaimana AI seperti IBM Granite dapat berkontribus
     *   Model bahasa dapat dilatih atau di-*prompt* untuk menghasilkan pertanyaan kuis baru, pilihan jawaban, dan kunci jawaban berdasarkan topik tertentu (misalnya, Wawasan Kebangsaan). Ini sangat mempercepat proses pengisian data kuis.
 *   **Bantuan Pembuatan Kode (Code Generation) & Debugging:**
     *   Model seperti Granite Code dapat membantu dalam menulis *snippet* kode JavaScript untuk fungsionalitas tertentu (misalnya, algoritma pengacakan, fungsi manipulasi DOM).
+ 
+      ![AI IBM Granite](https://github.com/user-attachments/assets/ebafbfd8-08b5-4a12-979c-b90fef7bfbf0)
+
     *   Dapat memberikan penjelasan tentang bagian kode yang kompleks atau menyarankan perbaikan untuk *bug* yang mungkin terjadi.
 *   **Saran Desain UI/UX:**
+
+![IBM_Granite_AI](https://github.com/user-attachments/assets/7a9cfd6a-1425-4bdf-a5d4-923030d4c90a)
+
+*
     *   AI dapat menganalisis deskripsi atau *mockup* desain dan menyarankan perbaikan CSS untuk responsivitas, estetika, atau aksesibilitas, membantu menciptakan antarmuka yang lebih menarik dan *user-friendly*.
 *   **Penyusunan Dokumentasi Proyek:**
     *   Model bahasa dapat membantu menyusun bagian-bagian dari `README.md`, seperti deskripsi proyek, daftar fitur, atau instruksi *setup*, memastikan dokumentasi yang jelas dan komprehensif.
