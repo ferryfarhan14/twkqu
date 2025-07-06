@@ -1,4 +1,4 @@
-# 🧠 Tes Wawasan Kebangsaan :flag_id: (TWKQu)
+# 🧠 Tes Wawasan Kebangsaan Ini adalah bendera Indonesia: 🇮🇩:flag_id: (TWKQu)
 
 ![12121](https://github.com/user-attachments/assets/4d1e2595-2d74-4296-b4f0-5699a0c14fb4)
 
