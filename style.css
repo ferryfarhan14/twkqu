@@ -1,11 +1,11 @@
 /* General Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('bg.png'); /* Ganti 'your-image-name.jpg' dengan nama file gambar Anda */
-    background-size: cover; /* Memastikan gambar menutupi seluruh area */
-    background-position: center center; /* Memposisikan gambar di tengah */
-    background-repeat: no-repeat; /* Mencegah gambar diulang */
-    background-attachment: fixed; /* Membuat gambar tetap saat di-scroll (opsional, bisa dihapus jika tidak ingin fixed) */
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,54 +17,79 @@ body {
 
 /* Quiz Container */
 .quiz-container {
-    background-color: rgba(255, 255, 255, 0.3); /* Transparansi 30% */
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: 100%;
     max-width: 600px;
     text-align: center;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
 }
 
 h1 {
-    color: #ffffff; /* Warna putih untuk h1 */
+    color: #ffffff;
     margin-bottom: 30px;
     font-size: 2.2em;
     font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Penambahan text-shadow */
 }
 
 h2 {
-    color: #ffffff; /* Warna putih untuk h2 (pertanyaan) */
+    color: #ffffff;
     margin-bottom: 25px;
     font-size: 1.6em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Penambahan text-shadow */
 }
 
 /* Question Section */
 .question-section {
     margin-bottom: 30px;
+    position: relative;
 }
 
-/* --- START: Penambahan untuk Progress Text --- */
+/* Animasi Opacity untuk Pertanyaan */
+.question-text {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.question-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Progress Indikator */
 .progress-text {
     font-size: 1.1em;
-    color: #ffffff; /* Warna putih untuk teks progress */
-    margin-bottom: 20px; /* Jarak dari judul utama */
+    color: #ffffff;
+    margin-bottom: 20px;
     font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Penambahan text-shadow */
 }
-/* --- END: Penambahan --- */
+
+/* Pesan Error */
+.error-message {
+    color: #e74c3c; /* Merah untuk pesan error */
+    font-size: 0.9em;
+    margin-top: -15px; /* Sedikit naik agar dekat dengan tombol */
+    margin-bottom: 15px;
+    font-weight: 600;
+    transition: opacity 0.3s ease-in-out;
+}
 
 /* Options Container (for answer buttons) */
 .options-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between buttons */
+    gap: 15px;
     margin-bottom: 30px;
 }
 
 .option-button {
-    background-color: #ecf0f1; /* Light gray for buttons */
-    border: 2px solid #bdc3c7; /* Border for buttons */
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
     color: #34495e;
     padding: 15px 25px;
     border-radius: 8px;
@@ -72,13 +97,13 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
     width: 100%;
-    text-align: left; /* Align text to left */
+    text-align: left;
 }
 
 .option-button:hover {
     background-color: #dbe4e7;
     border-color: #95a5a6;
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-2px);
 }
 
 .option-button.selected {
@@ -126,16 +151,16 @@ h2 {
 .result-section {
     margin-top: 30px;
     padding: 20px;
-    background-color: #ffffff; /* Background putih untuk result section */
+    background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #d1e7dd;
 }
 
-/* Ini adalah h2 di dalam result-section, jadi warnanya berbeda dari h2 pertanyaan */
 .result-section h2 {
     color: #333; /* Warna gelap untuk h2 di result section */
     margin-bottom: 25px;
     font-size: 1.6em;
+    text-shadow: none; /* Hapus text-shadow untuk h2 di result section */
 }
 
 .result-section p {
