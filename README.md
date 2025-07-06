@@ -19,7 +19,7 @@ Aplikasi kuis interaktif sederhana yang dirancang untuk menguji dan meningkatkan
 
 ## 🚀 Cara Menggunakan
 
-1. Akses pada link https://twkqu.netlify.app atau https://twkqu.vercel.app
+1. Akses pada link https://twkqu.netlify.app
 
    Atau
    
